@@ -1,5 +1,5 @@
 # guildsaver
-Discord server/guild TXT exporter written in Python
+Discord server/guild exporter to TXT, written in Python
 
 Usage: ``python3 guildsaver.py [token] [server ID] [msg limit]``
 
