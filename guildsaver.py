@@ -1,5 +1,6 @@
-# guildsaver, a Discord server/guild exporter
-# last updated: November 13 2020
+# guildsaver, a discord server/guild exporter
+# file created: november 13 2020
+# last updated: march 7 2021
 # written by moxniso
 
 import discord
@@ -63,7 +64,7 @@ async def main(errflag):
         for chan in guild.text_channels:
             print("Saving " + chan.name + "...")
             try:
-                log = open(chan.name + ".txt", "w")
+                log = open(chan.name + ".txt", "w", encoding="utf-8")
             except OSError:
                 print("File {} cannot be opened!".format(chan.name + ".txt"))
                 break
